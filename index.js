@@ -12,6 +12,10 @@ mongoose.connect(
         console.log(err);
     });
 
+app.get("/api/test", () => {
+    console.log("Test cu succes!");
+});
+
 app.listen(process.env.PORT || 5000, () => {
     console.log("Back end server is running !");
 });
